@@ -15,9 +15,7 @@
         display:block;
       }
       .channel-picture{
-         display:inline-block;
-         width:50px;
-         vertical-align: top;
+        background-color: grey;;
       }
       .video-title{
         margin-top:0;
@@ -36,8 +34,7 @@
         color:rgb(96,96,96);
       }
       .video-info{
-         display:inline-block;
-         width:245px;
+        background-color:grey;
       }
       .video-preview{
         width:300px;
@@ -52,6 +49,10 @@
       .thumbnail-row{
         margin-bottom:12px;
       }
+      .video-info-grid{
+        display:grid;
+        grid-template-columns:50px 1fr;
+      }
     </style>
   </head>
   <body>
@@ -60,10 +61,11 @@
       <div class="thumbnail-row">
         <img class="thumbnail" src="Thumbnail/thumbnail-1.webp">
       </div>
-      <div>
+      <div class="video-info-grid">
       <div class="channel-picture">
          <img class="profile-picture" src="ChannelPicture/channel-1.jpeg">
       </div>
+      
       <div class="video-info">
           <p class="video-title">
         Talking Tech and 
@@ -77,11 +79,12 @@
     </p>
       </div>
     </div>
-    </div>
+  </div>
 <div class="video-preview">
       <div class="thumbnail-row">
         <img class="thumbnail" src="Thumbnail/thumbnail-2.webp">
       </div>
+      <div class="video-info-grid">
       <div class="channel-picture">
          <img class="profile-picture" src="ChannelPicture/channel-2.jpeg">
       </div>
@@ -97,5 +100,6 @@
     </p>
       </div>
       </div>
+    </div>
   </body>
 </html>
